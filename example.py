@@ -1,4 +1,8 @@
-# This is a sample Python code adhering to PEP 8 style guidelines
+#!/usr/bin/python3
+
+"""
+This is a sample Python code adhering to PEP 8 style guidelines
+"""
 
 class Calculator:
     """A simple calculator class."""
@@ -17,19 +21,7 @@ class Calculator:
         self.result = a - b
         return self.result
 
-    def multiply(self, a, b):
-        """Multiply two numbers."""
-        self.result = a * b
-        return self.result
-
-    def divide(self, a, b):
-        """Divide a by b."""
-        if b != 0:
-            self.result = a / b
-            return self.result
-        else:
-            raise ValueError("Cannot divide by zero")
-
+# Add more functions and classes as needed
 
 def main():
     """Main function to demonstrate the code."""
@@ -38,17 +30,10 @@ def main():
     # Perform some calculations
     result_sum = calculator.add(5, 3)
     result_difference = calculator.subtract(10, 4)
-    result_product = calculator.multiply(2, 7)
 
     print(f"Sum: {result_sum}")
     print(f"Difference: {result_difference}")
-    print(f"Product: {result_product}")
 
-    try:
-        # Attempt to divide by zero
-        result_quotient = calculator.divide(8, 0)
-    except ValueError as e:
-        print(f"Error: {e}")
 
 if __name__ == "__main__":
     main()
